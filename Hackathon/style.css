@@ -1,0 +1,32 @@
+.cd1 {
+    display: flex;
+}
+
+.cdh {
+    padding: 15px;
+}
+
+.dks {
+    background-color: rgb(20, 91, 91);
+    border-radius: 4px;
+}
+
+.im1 {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.fc {
+    background-image: url("./images/3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.size {
+    font-size: 70px;
+}
+
+.p6 {
+    padding-left: 35px;
+}

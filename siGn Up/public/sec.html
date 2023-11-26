@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+</head>
+
+<body>
+    <!--  sign Up -->
+    <div class="main">
+        <div class="under">
+            <h2>Sign Up</h2>
+            <form action="#">
+                <div class="email">
+                    <label for="">Email</label> <br>
+                    <input id="email" type="User Name">
+                </div>
+                <BR></BR>
+                <div class="pass">
+                    <label for="Password">Password</label> <br>
+                    <input type="password" name="" id="password"> <br> <br>
+                </div>
+                <br>
+                <button class="btn-login" onclick="singup()">sing Up</button>
+                <br>
+                <br>
+                <a href="./index.html">Already have an account...!</a>
+                <br> <br> <br>
+                <button class="btn-google" onclick="google()"><b> <img width="40px" src="./img/google.png" alt=""></b></button>
+                <button class="btn-git"> <img class="btn-git" width="40px" src="./img/git.png" alt=""></button>
+                <button class="btn-fb"><img class="btn-fb" width="40px" src="./img/fb.jpg" alt=""></button>
+                <!-- <button onclick="google()">login with Google</button> -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "poppins" sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(17, 17, 17);
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: rgb(17, 16, 16);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(240, 205, 140);
+}
+
+h2 {
+    font-size: 2em;
+    color: rgb(247, 244, 241);
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: rgb(6, 248, 167);
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    color: #fff;
+    font-size: 0.9em;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: rgb(235, 223, 246);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    /* color: rgb(223, 216, 230)30); */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: rgb(34, 32, 32);
+    font-weight: 500;
+}
+
+.register-link {
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+.login-light {
+    position: absolute;
+    top: -237px;
+    left: -10%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 20px;
+}
+
+.login-light::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 450px;
+    background: linear-gradient(to bottom, rgb(255, 255, 255, .3) -50%, rgb(255, 255, 255, 0) 90%);
+}
+
+.toggle {
+    position: absolute;
+    top: 20px;
+    right: -70px;
+    width: 60px;
+    height: 120px;
+    background-color: rgb(41, 39, 39);
+    border-radius: 10px;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 80%;
+    background-color: rgb(92, 86, 86);
+}
+
+.toggle::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 45px;
+    height: 45px;
+    background: rgb(48, 45, 45);
+    border: 2px solid rgb(59, 49, 49);
+    border-radius: 19px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: .5s ease;
+}
+
+.input-check:checked~.toggle::after {
+    top: 53px;
+}
+
+.input-check {
+    position: absolute;
+    right: -70px;
+    z-index: 1;
+    opacity: 0;
+}
+
+.toggle .text {
+    position: absolute;
+    top: 29px;
+    left: 28%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    z-index: 1;
+    text-decoration: uppercase;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.toggle .text .off {
+    opacity: 1;
+}
+
+.input-check:checked~.toggle .text.off {
+    top: 76px;
+    opacity: 0;
+}
+
+.toggle .text.on {
+    opacity: 0;
+}
+
+.input-check:checked~.toggle .text.on {
+    top: 76px;
+    opacity: 1;
+    color: aqua;
+    text-shadow: 0 0 15px rgb(54, 207, 207), 0 0 15px rgb(41, 207, 207), 0 0 15px rgb(43, 209, 209), 0 0 15px rgb(2, 204, 204);
+}

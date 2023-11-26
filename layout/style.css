@@ -1,0 +1,23 @@
+li {
+    display: inline;
+}
+
+.space {
+    padding: 100px;
+}
+
+.class1 {
+    background-color: rgb(209, 213, 217);
+}
+
+.web {
+    text-decoration: underline;
+}
+
+.ucolor {
+    background-color: yellow;
+}
+
+.space2 {
+    padding: 100px;
+}
